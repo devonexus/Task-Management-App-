@@ -1,0 +1,17 @@
+c:\users\sci\documents\visual studio 2015\Projects\TaskManagementApp\TaskManagementApp.Models\bin\Debug\TaskManagementApp.Models.dll.config
+c:\users\sci\documents\visual studio 2015\Projects\TaskManagementApp\TaskManagementApp.Models\bin\Debug\TaskManagementApp.Models.dll
+c:\users\sci\documents\visual studio 2015\Projects\TaskManagementApp\TaskManagementApp.Models\bin\Debug\TaskManagementApp.Models.pdb
+c:\users\sci\documents\visual studio 2015\Projects\TaskManagementApp\TaskManagementApp.Models\bin\Debug\EntityFramework.dll
+c:\users\sci\documents\visual studio 2015\Projects\TaskManagementApp\TaskManagementApp.Models\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\sci\documents\visual studio 2015\Projects\TaskManagementApp\TaskManagementApp.Models\bin\Debug\Repository.Pattern.dll
+c:\users\sci\documents\visual studio 2015\Projects\TaskManagementApp\TaskManagementApp.Models\bin\Debug\Repository.Pattern.Ef6.dll
+c:\users\sci\documents\visual studio 2015\Projects\TaskManagementApp\TaskManagementApp.Models\bin\Debug\EntityFramework.xml
+c:\users\sci\documents\visual studio 2015\Projects\TaskManagementApp\TaskManagementApp.Models\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\sci\documents\visual studio 2015\Projects\TaskManagementApp\TaskManagementApp.Models\obj\Debug\TaskManagementApp.Models.csprojResolveAssemblyReference.cache
+c:\users\sci\documents\visual studio 2015\Projects\TaskManagementApp\TaskManagementApp.Models\obj\Debug\TaskManagementApp.Models.dll
+c:\users\sci\documents\visual studio 2015\Projects\TaskManagementApp\TaskManagementApp.Models\obj\Debug\TaskManagementApp.Models.pdb
+c:\users\sci\documents\visual studio 2015\Projects\TaskManagementApp\TaskManagementApp.Models\bin\Debug\Newtonsoft.Json.dll
+c:\users\sci\documents\visual studio 2015\Projects\TaskManagementApp\TaskManagementApp.Models\bin\Debug\TrackableEntities.Common.dll
+c:\users\sci\documents\visual studio 2015\Projects\TaskManagementApp\TaskManagementApp.Models\bin\Debug\TrackableEntities.EF.6.dll
+c:\users\sci\documents\visual studio 2015\Projects\TaskManagementApp\TaskManagementApp.Models\bin\Debug\Newtonsoft.Json.xml
+c:\users\sci\documents\visual studio 2015\Projects\TaskManagementApp\TaskManagementApp.Models\bin\Debug\TrackableEntities.Common.xml

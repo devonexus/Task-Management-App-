@@ -1,0 +1,68 @@
+@{
+    var grid = Html.DevExpress().GridView(settings => {
+        settings.Name = "EmployeesPartial";
+        settings.CallbackRouteValues = new { Controller = "Employees", Action = "EmployeesPartial" };
+        settings.SettingsEditing.AddNewRowRouteValues = new { Controller = "Employees", Action = "EmployeesPartialAddNew" };
+        settings.SettingsEditing.UpdateRowRouteValues = new { Controller = "Employees", Action = "EmployeesPartialUpdate" };
+        settings.SettingsEditing.DeleteRowRouteValues = new { Controller = "Employees", Action = "EmployeesPartialDelete" };
+        settings.SettingsEditing.Mode = GridViewEditingMode.EditFormAndDisplayRow;
+        settings.SettingsBehavior.ConfirmDelete = true;
+
+        //settings.CommandColumn.Visible = true;
+        //      settings.CommandColumn.ShowNewButton = true;
+        //      settings.CommandColumn.ShowDeleteButton = true;
+        //      settings.CommandColumn.ShowEditButton = true;
+
+        settings.KeyFieldName = "employee_id";
+        settings.SettingsPager.Visible = true;
+        settings.Settings.ShowGroupPanel = true;
+        settings.Settings.ShowFilterRow = true;
+        settings.SettingsBehavior.AllowSelectByRowClick = true;
+        settings.Toolbars.Add(toolbar =>
+        {
+            toolbar.Items.Add(GridViewToolbarCommand.New);
+            toolbar.Items.Add(GridViewToolbarCommand.Edit);
+            toolbar.Items.Add(GridViewToolbarCommand.Delete);
+            toolbar.Items.Add(GridViewToolbarCommand.Refresh);
+        });
+        settings.SettingsBehavior.AllowFocusedRow = true;
+
+        settings.SettingsAdaptivity.AdaptivityMode = GridViewAdaptivityMode.Off;
+        settings.SettingsAdaptivity.AdaptiveColumnPosition = GridViewAdaptiveColumnPosition.Right;
+        settings.SettingsAdaptivity.AdaptiveDetailColumnCount = 1;
+        settings.SettingsAdaptivity.AllowOnlyOneAdaptiveDetailExpanded = false;
+        settings.SettingsAdaptivity.HideDataCellsAtWindowInnerWidth = 0;
+
+        //settings.Columns.Add("employee_id");
+        settings.Columns.Add("employee_id");
+        settings.Columns.Add(item => {
+            item.FieldName = "first_name";
+            item.ColumnType = MVCxGridViewColumnType.TextBox;
+        });
+        settings.Columns.Add(item =>
+        {
+            item.FieldName = "middle_name";
+            item.ColumnType = MVCxGridViewColumnType.TextBox;
+        });
+        settings.Columns.Add(item =>
+        {
+            item.FieldName = "last_name";
+            item.ColumnType = MVCxGridViewColumnType.TextBox;
+        });
+        settings.Columns.Add(item =>
+        {
+            item.FieldName = "age";
+            item.ColumnType = MVCxGridViewColumnType.SpinEdit;
+            SpinEditProperties spinEditProperties = item.PropertiesEdit as SpinEditProperties;
+            spinEditProperties.NumberType = SpinEditNumberType.Integer;
+            spinEditProperties.MinValue = 20;
+            spinEditProperties.MaxValue = 100;
+            spinEditProperties.ClientSideEvents.Init = "function(s,e){ s.SetText(20); }";
+        });
+       
+    });
+    if (ViewData["EditError"] != null){
+        grid.SetEditErrorText((string)ViewData["EditError"]);
+    }
+}
+@grid.Bind(Model).GetHtml()

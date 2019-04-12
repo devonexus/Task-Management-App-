@@ -1,0 +1,17 @@
+*.dll
+*.csdl
+*.cache
+*.nupkg
+*.pdb
+*.xml
+*.xdt
+*.p7s
+*.props
+*.ps1
+*.targets
+*.transform
+*.psd1
+*.pp
+*.map
+*.exe
+*.psm1
