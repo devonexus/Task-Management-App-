@@ -39,4 +39,5 @@ This are the required nuget packages needed to implement the above mentioned arc
 - [ASP.NET MVC](https://dotnet.microsoft.com/apps/aspnet/mvc) - is a modern web framework for building web applications with .Net Framework.
 - [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-2017) - relational database used in building this web app.
 - [Entity Framework](https://docs.microsoft.com/en-us/ef/) - object Relational Mapper that will generate the POCO or the model part of the web application.
+- [Devexpress MVC](https://demos.devexpress.com/mvc/) - .Net extension that takes care of the view part of the MVC architecture.
 
